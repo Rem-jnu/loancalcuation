@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Image/loancalcuation.png</file>
+    </qresource>
+</RCC>
