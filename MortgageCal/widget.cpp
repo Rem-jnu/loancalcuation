@@ -10,7 +10,14 @@ Widget::Widget(QWidget *parent)
     ,m_percentage(0)
 {
     ui->setupUi(this);
-
+    ui->lineEditPrice->setPlaceholderText("元/平方米");
+    ui->lineEditarea->setPlaceholderText("平方米");
+    ui->lineEditRate->setPlaceholderText("%");
+    ui->lineEditDaikuanzonge->setPlaceholderText("元");
+    ui->lineEditshangdaiRate->setPlaceholderText("%");
+    ui->lineEditgongjijinRate->setPlaceholderText("%");
+    ui->lineEditshangyedaikuangzonge->setPlaceholderText("元");
+    ui->lineEditgongjijindaikuanzonge->setPlaceholderText("元");
     setFixedSize(580,440);
     setWindowIcon(QIcon(":/Image/loancalcuation.png"));
     m_repaymentTupe1 = false;
