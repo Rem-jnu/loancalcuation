@@ -1,20 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>Image/loancalcuation.png</file>
-        <file>Image/2e1b31576737bf1ae95e191b88a3dd39.jpg</file>
-        <file>Image/8ed09be2a5dae2ffe5a7838009082836.jpg</file>
-        <file>Image/75f3b16c212970362e4592928691eece.png</file>
-        <file>Image/99aadcc45734bb64efc496790a9d6a8a.png</file>
-        <file>Image/a85de17bd92d41d61542f66dfa9d21a3.jpg</file>
-        <file>Image/abdd7270a445b33e4afc2258b6e34c79.jpg</file>
-        <file>Image/b5e5e6160f7ae269880f4676a292a267.jpg</file>
-        <file>Image/ce8e3374da0b9cf1ef4b2f7280aec347.jpg</file>
-        <file>Image/d9dd4371c6ddfd4c4180d18b28b52b17.jpg</file>
-        <file>Image/e3a202b56f587c2c3f6c6da9d70a6581.jpg</file>
-        <file>Image/e3699441c6a383c1a6fab1db7d55bb31.jpg</file>
-        <file>Image/u=1143514321,618338339&amp;fm=26&amp;gp=0.jpg</file>
-        <file>Image/u=3365213359,2953571776&amp;fm=26&amp;gp=0.jpg</file>
-        <file>Image/u=645972764,4283464872&amp;fm=26&amp;gp=0.jpg</file>
         <file>Image/u=1673905467,4286326542&amp;fm=26&amp;gp=0.jpg</file>
     </qresource>
 </RCC>

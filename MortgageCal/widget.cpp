@@ -21,7 +21,7 @@ Widget::Widget(QWidget *parent)
     ui->lineEditgongjijinRate->setPlaceholderText("%");
     ui->lineEditshangyedaikuangzonge->setPlaceholderText("元");
     ui->lineEditgongjijindaikuanzonge->setPlaceholderText("元");
-    ui->radioButton1->setChecked(true);
+
     setFixedSize(800,495);
     setWindowIcon(QIcon(":/Image/loancalcuation.png"));
     m_repaymentTupe1 = false;
