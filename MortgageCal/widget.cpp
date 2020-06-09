@@ -1,6 +1,9 @@
 #include "widget.h"
 #include "ui_widget.h"
 #include<QIcon>
+#include<QDialog>
+#include<QMessageBox>
+#include<QPainter>
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
@@ -18,7 +21,8 @@ Widget::Widget(QWidget *parent)
     ui->lineEditgongjijinRate->setPlaceholderText("%");
     ui->lineEditshangyedaikuangzonge->setPlaceholderText("元");
     ui->lineEditgongjijindaikuanzonge->setPlaceholderText("元");
-    setFixedSize(580,440);
+    ui->radioButton1->setChecked(true);
+    setFixedSize(800,495);
     setWindowIcon(QIcon(":/Image/loancalcuation.png"));
     m_repaymentTupe1 = false;
     m_repaymentTupe2 = false;
@@ -621,12 +625,34 @@ void Widget::pushButtonCal()
 }
 void Widget::pushButtonClear()
 {
-    ui->lineEditRate->clear();
-    ui->lineEditarea->clear();
-    ui->lineEditPrice->clear();
-    ui->lineEditDaikuanzonge->clear();
-    ui->lineEditshangdaiRate->clear();
-    ui->lineEditgongjijinRate->clear();
-    ui->lineEditshangyedaikuangzonge->clear();
-    ui->lineEditgongjijindaikuanzonge->clear();
+
+
+       if(QMessageBox::Yes == QMessageBox::question(this,"清空重填","确定要清空数据吗？",QMessageBox::Yes|QMessageBox::No,QMessageBox::No))
+       {
+           ui->lineEditRate->clear();
+           ui->lineEditarea->clear();
+           ui->lineEditPrice->clear();
+           ui->lineEditDaikuanzonge->clear();
+           ui->lineEditshangdaiRate->clear();
+           ui->lineEditgongjijinRate->clear();
+           ui->lineEditshangyedaikuangzonge->clear();
+           ui->lineEditgongjijindaikuanzonge->clear();
+           ui->shoufu->clear();
+           ui->yuegong->clear();
+           ui->shouyuegong->clear();
+           ui->lixi->clear();
+           ui->meiyuedijian->clear();
+           ui->huankuanzonge->clear();
+           ui->huankuanyueshu->clear();
+           ui->zonge->clear();
+       }
 }
+void Widget::paintEvent(QPaintEvent * )
+{
+
+    QPainter painter(this);
+    QPixmap pix;
+    pix.load(":/Image/u=1673905467,4286326542&fm=26&gp=0.jpg");
+    painter.drawPixmap(0,0,this->width(),this->height(),pix);
+}
+

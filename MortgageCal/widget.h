@@ -17,7 +17,7 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
-
+    void paintEvent(QPaintEvent * );
 private:
     Ui::Widget *ui;
 
